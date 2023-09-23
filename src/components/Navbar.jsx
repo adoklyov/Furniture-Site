@@ -8,7 +8,7 @@ function Navbar() {
 }
     return (
         // Nav Menu + Mobile Nav Menu
-        <div className='flex justify-between items-center max-w[1240px] h-24 mx-auto px-5 text-black'>
+        <div className='flex justify-between items-center max-w[1240px] h-24 mx-auto px-5 text-black bg-white'>
             <div>
                 <BiSolidHomeHeart size={45}/>
             </div>
@@ -20,7 +20,7 @@ function Navbar() {
                 <li className='p-5'>Products</li>
                 <li className='p-5'>Contact</li>
             </ul>
-            <div onClick={handleNav} className='block md:hidden'>
+            <div onClick={handleNav} >
                 {!nav ? <BiMenuAltRight size={20}/> : <BiMenuAltRight size={45} />}
             </div>
             

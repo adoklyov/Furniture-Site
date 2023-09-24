@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { BiSolidHomeHeart, BiMenuAltRight } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     const [nav, setNav] = useState(false) 
@@ -14,9 +15,8 @@ function Navbar() {
             </div>
             <h1 className='w-full text-3xl font-bold text-[black]'>Furniture</h1>
             <ul className='hidden md:flex'>
-                <li className='p-5'>Home</li>
-                <li className='p-5'>About</li>
-                <li className='p-5'>Categories</li>
+                <li className='p-5'><Link to='/'>Home</Link></li>                
+                <li className='p-5'><Link to='categories'>Categories</Link></li>
                 <li className='p-5'>Products</li>
                 <li className='p-5'>Contact</li>
             </ul>
@@ -28,7 +28,6 @@ function Navbar() {
             <h1 className='w-full text-3xl font-bold text-[black] m-4'>Furniture</h1>
                 <ul className='pt-3 uppercase'>
                     <li className='p-5 border-b border-t border-slate-900'>Home</li>
-                    <li className='p-5 border-b border-slate-900'>About</li>
                     <li className='p-5 border-b border-slate-900'>Categories</li>
                     <li className='p-5 border-b border-slate-900'>Products</li>
                     <li className='p-5 border-b border-slate-900'>Contact</li> 
